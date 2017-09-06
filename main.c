@@ -78,7 +78,6 @@ int main(int argc, char *argv[])
 	for(i = 0; i < numloop; i++){
 		total_c += cpu_time[i];
 		total_t += wall_clock_time[i];
-		printf("Loop:%d\tCPU:%.3lf\tWall:%.3lf\n",i,cpu_time[i],wall_clock_time[i]);
 	}
 	
 	double average_c = (double)total_c / ((double)numloop);
